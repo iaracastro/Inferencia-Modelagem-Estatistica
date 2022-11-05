@@ -1,2 +1,2 @@
-# Material-de-Infer-ncia-Estat-stica
+# Material-de-Inferencia-Estatistica
 Repositório pessoal pra material de inferência estatística
