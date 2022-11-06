@@ -26,7 +26,7 @@ Exercícios selecionados da 4th edição do Degroot.
 # Materiais
 Materiais diversos como artigos, pdfs, códigos e imagens.
 
-# (Resumos)[https://github.com/iaracastro/InferenciaEstatistica/tree/main/Resumos]
+# Resumos
 1. Inferência Resumo I
 Tópicos:
   - Variância e Valor Esperado
