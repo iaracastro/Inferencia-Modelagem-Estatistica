@@ -27,8 +27,8 @@ Exercícios selecionados da 4th edição do Degroot.
 Materiais diversos como artigos, pdfs, códigos e imagens.
 
 # Resumos
-1. Inferência Resumo I
-Tópicos:
+1. Tópicos de Inferência Resumo I
+
   - Variância e Valor Esperado
   - Convergência e Teorema de Bayes com Probabilidade Condicional
   - Teorema Central do Limite (TCL) e Lei dos Grandes Números (LGN)
@@ -49,6 +49,22 @@ Tópicos:
   - Eficiência de um estimador
   - Fórmulas Básicas de Logaritmo e Derivada
 
+2. Tópicos de Inferência Resumo II
+
+  - Distribuição Qui-Quadrado
+  - Distribuição T-Student
+  - Intervalo de Confiança
+  - Teste de Hipóteses
+  - Região Crítica
+  - Região de Rejeição
+  - Função Poder
+  - Tipo de Erro
+  - Tamanho do Teste (nível de significância)
+  - P-valor
+  - Teste da razão da verossimilhança
+  - Teorema de Wilks
+  - Teste não-viesado
+  
 # Trabalhos
 Trabalhos passados a cada mês durante a disciplina, valendo 1 pt cada.
 
