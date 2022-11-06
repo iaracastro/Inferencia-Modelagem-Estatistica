@@ -26,8 +26,8 @@ Exercícios selecionados da 4th edição do Degroot.
 # Materiais
 Materiais diversos como artigos, pdfs, códigos e imagens.
 
-# Resumos
-1. (Inferência Resumo I)[https://github.com/iaracastro/InferenciaEstatistica/blob/main/Resumos/Infer%C3%AAcia%20Resumo%20I.pdf]
+# (Resumos)[https://github.com/iaracastro/InferenciaEstatistica/tree/main/Resumos]
+1. Inferência Resumo I
 Tópicos:
   - Variância e Valor Esperado
   - Convergência e Teorema de Bayes com Probabilidade Condicional
