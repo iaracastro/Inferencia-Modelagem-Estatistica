@@ -27,7 +27,7 @@ Exercícios selecionados da 4th edição do Degroot.
 Materiais diversos como artigos, pdfs, códigos e imagens.
 
 # Resumos
-1. Tópicos de Inferência Resumo I
+### 1. Tópicos de Inferência Resumo I
 
   - Variância e Valor Esperado
   - Convergência e Teorema de Bayes com Probabilidade Condicional
@@ -49,7 +49,7 @@ Materiais diversos como artigos, pdfs, códigos e imagens.
   - Eficiência de um estimador
   - Fórmulas Básicas de Logaritmo e Derivada
 
-2. Tópicos de Inferência Resumo II
+### 2. Tópicos de Inferência Resumo II
 
   - Distribuição Qui-Quadrado
   - Distribuição T-Student
