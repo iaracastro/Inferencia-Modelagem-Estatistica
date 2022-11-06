@@ -2,7 +2,7 @@
 Repositório pessoal pra matéria de inferência estatística.
 Se alguém achou isso por acaso, espero que te ajude :)
 
-Repositório de Teoria da Probabilidade: (aqui)[https://github.com/iaracastro/TeoriaDaProbabilidade]
+Repositório de Teoria da Probabilidade: [aqui](https://github.com/iaracastro/TeoriaDaProbabilidade)
 O repositório é dividido em 4 seções:
 # Exercícios
 Exercícios selecionados da 4th edição do Degroot.
