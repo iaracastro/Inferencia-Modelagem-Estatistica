@@ -3,7 +3,7 @@ Repositório pessoal pra matéria de inferência estatística.
 Se alguém achou isso por acaso, espero que te ajude :)
 
 O repositório é dividido em 4 seções:
-# (Exercícios)
+# Exercícios
 Exercícios selecionados da 4th edição do Degroot.
 
 - 7.2 (2, 3, 6 e 10)
@@ -23,10 +23,10 @@ Exercícios selecionados da 4th edição do Degroot.
 - 8.8 (5, 7 e 10)
 - 9.1 (3, 8, 13 e 19)
 
-# (Materiais)
+# Materiais
 Materiais diversos como artigos, pdfs, códigos e imagens.
 
-# (Resumos)
+# Resumos
 1. (Inferência Resumo I)[https://github.com/iaracastro/InferenciaEstatistica/blob/main/Resumos/Infer%C3%AAcia%20Resumo%20I.pdf]
 Tópicos:
   - Variância e Valor Esperado
@@ -49,7 +49,7 @@ Tópicos:
   - Eficiência de um estimador
   - Fórmulas Básicas de Logaritmo e Derivada
 
-# (Trabalhos)
+# Trabalhos
 Trabalhos passados a cada mês durante a disciplina, valendo 1 pt cada.
 
 - [Trabalho I](https://github.com/iaracastro/InferenciaEstatistica/tree/main/Trabalhos/Trabalho%20I): Análise Baysiana no caso Normal
