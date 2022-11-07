@@ -25,7 +25,7 @@ Exercícios selecionados da 4th edição do Degroot.
 - 9.1 (3, 8, 13 e 19)
 
 # Materiais
-Materiais diversos como artigos, pdfs, códigos e imagens.
+Materiais diversos como pdfs, livros, códigos e imagens.
 
 # Resumos
 ### 1. Inferência Resumo I
