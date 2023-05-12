@@ -1,4 +1,4 @@
-# Material-de-Inferencia-Estatistica
+# Material-de-Inferencia-e-Modelagem-Estatistica
 Repositório pessoal pra matéria de inferência e de modelagem estatística.
 Se alguém achou isso por acaso, espero que te ajude :)
 
