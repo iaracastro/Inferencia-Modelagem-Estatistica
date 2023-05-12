@@ -1,10 +1,10 @@
 # Material-de-Inferencia-Estatistica
-Repositório pessoal pra matéria de inferência estatística.
+Repositório pessoal pra matéria de inferência e de modelagem estatística.
 Se alguém achou isso por acaso, espero que te ajude :)
 
 Repositório de Teoria da Probabilidade: [aqui](https://github.com/iaracastro/TeoriaDaProbabilidade) <br/>
 
-# Exercícios
+# Exercícios de Inferência Estatística
 Exercícios selecionados da 4th edição do Degroot.
 
 - 7.2 (2, 3, 6 e 10)
@@ -27,7 +27,7 @@ Exercícios selecionados da 4th edição do Degroot.
 # Materiais
 Materiais diversos como pdfs, livros, códigos e imagens.
 
-# Resumos
+# Resumos de Inferência Estatística
 ### 1. Inferência Resumo I
 
   - Variância e Valor Esperado
@@ -66,10 +66,15 @@ Materiais diversos como pdfs, livros, códigos e imagens.
   - Teorema de Wilks
   - Teste não-viesado
   
-# Trabalhos
+# Trabalhos de Inferência Estatística
 Trabalhos passados a cada mês durante a disciplina, valendo 1 pt cada.
 
 - [Trabalho I](https://github.com/iaracastro/InferenciaEstatistica/tree/main/Trabalhos/Trabalho%20I): Análise Baysiana no caso Normal
 - [Trabalho II](https://github.com/iaracastro/InferenciaEstatistica/tree/main/Trabalhos/Trabalho%20II): Algoritmo EM
 - [Trabalho III](https://github.com/iaracastro/InferenciaEstatistica/tree/main/Trabalhos/Trabalho%20III): Método Delta
 - [Trabalho IV](https://github.com/iaracastro/InferenciaEstatistica/tree/main/Trabalhos/Trabalho%20IV): Testes Uniformemente Mais Poderosos (UMP)
+
+# Trabalhos de Modelagem Estatística
+
+- [CMT 1]
+- [CMT 2]
