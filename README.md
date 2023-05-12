@@ -76,5 +76,6 @@ Trabalhos passados a cada mês durante a disciplina, valendo 1 pt cada.
 
 # Trabalhos de Modelagem Estatística
 
-- [CMT 1]
-- [CMT 2]
+- [CMT 1](https://github.com/iaracastro/Inferencia-Modelagem-Estatistica/tree/main/Trabalhos-Modelagem/CMT-1): Regressão Linear
+- [CMT 2](https://github.com/iaracastro/Inferencia-Modelagem-Estatistica/tree/main/Trabalhos-Modelagem/CMT-2): Regressão Múltipla
+- [CMT 3](https://github.com/iaracastro/Inferencia-Modelagem-Estatistica/tree/main/Trabalhos-Modelagem/CMT-3): Regressão Múltipla Sob a Abordagem Bayesiana
