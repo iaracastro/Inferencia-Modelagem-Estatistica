@@ -1,0 +1,279 @@
+\documentclass[article,11pt,a4paper,brazil]{abntex2}
+
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{indentfirst}
+\usepackage{nomencl}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{microtype}
+\usepackage{float}
+\renewcommand*{\insertchapterspace}{%
+	\addtocontents{lof}{\protect\addvspace{10pt}}%
+	\addtocontents{lot}{\protect\addvspace{10pt}}}
+
+% ---
+% Pacotes fundamentais 
+% ---
+\usepackage{lmodern}			% Usa a fonte Latin Modern
+\usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
+\usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
+\usepackage{nomencl} 			% Lista de simbolos
+\usepackage{color}				% Controle das cores
+\usepackage{graphicx}			% Inclusão de gráficos
+\usepackage{microtype} 			% para melhorias de justificação
+\usepackage{array}
+% Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
+% ---
+\usepackage{lipsum}				% para geração de dummy text
+% ---
+
+
+
+% --- Informações de dados para CAPA e FOLHA DE ROSTO ---
+\titulo{Modelagem Estatística de Doenças Cardiovasculares com Base em Dados Clínicos}
+\tituloestrangeiro{Statistical Modelling of Cardiovascular Diseases Based on Clinical Data}
+
+\autor{
+	Iara Cristina Mescua Castro }
+
+\data{\today}
+% ---
+
+% ---
+% Configurações de aparência do PDF final
+
+% alterando o aspecto da cor azul
+\definecolor{blue}{RGB}{41,5,195}
+
+% informações do PDF
+\makeatletter
+
+\hypersetup{
+	%pagebackref=true,
+	pdftitle={\@title}, 
+	pdfauthor={\@author},
+	pdfsubject={Modelo de artigo científico com abnTeX2},
+	pdfcreator={LaTeX with abnTeX2},
+	pdfkeywords={abnt}{latex}{abntex}{abntex2}{atigo científico}, 
+	colorlinks=true,       		% false: boxed links; true: colored links
+	linkcolor=blue,          	% color of internal links
+	citecolor=blue,        		% color of links to bibliography
+	filecolor=magenta,      		% color of file links
+	urlcolor=blue,
+	bookmarksdepth=4
+}
+\makeatother
+% --- 
+
+% ---
+% compila o indice
+% ---
+\makeindex
+% ---
+
+% ---
+% Altera as margens padrões
+% ---
+\setlrmarginsandblock{3cm}{3cm}{*}
+\setulmarginsandblock{3cm}{3cm}{*}
+\checkandfixthelayout
+% ---
+
+
+% --- 
+% Espaçamentos entre linhas e parágrafos 
+% --- 
+
+% O tamanho do parágrafo é dado por:
+\setlength{\parindent}{1.3cm}
+
+% Controle do espaçamento entre um parágrafo e outro:
+\setlength{\parskip}{0.2cm}  % tente também \onelineskip
+
+% Espaçamento simples
+\SingleSpacing
+
+
+% ----
+% Início do documento
+% ----
+\begin{document}
+	
+	% Seleciona o idioma do documento (conforme pacotes do babel)
+	%\selectlanguage{english}
+	\selectlanguage{brazil}
+	
+	% Retira espaço extra obsoleto entre as frases.
+	\frenchspacing 
+	
+	% ----------------------------------------------------------
+	% ELEMENTOS PRÉ-TEXTUAIS
+	% ----------------------------------------------------------
+	
+	%---
+	%
+	% Se desejar escrever o artigo em duas colunas, descomente a linha abaixo
+	% e a linha com o texto ``FIM DE ARTIGO EM DUAS COLUNAS''.
+	% \twocolumn[    		% INICIO DE ARTIGO EM DUAS COLUNAS
+	%
+	%---
+	
+	% página de titulo principal (obrigatório)
+	\maketitle
+	\thispagestyle{empty}
+	\begin{citacao}
+		Estudo de caso da disciplina de Modelagem Estatística submetido como trabalho da A2 no 5° período de Matemática Aplicada.\\
+		Professor: Luiz Max
+	\end{citacao}
+	% titulo em outro idioma (opcional)
+
+\newpage
+\thispagestyle{empty}
+	% ----------------------------------------------------------
+	% Agradecimentos
+	% ----------------------------------------------------------
+
+	\section*{Agradecimentos}
+	Ao professor Luiz Max de modelagem pela disponibilidade e compromisso em nos ajudar a crescer como pesquisadores e profissionais da área. Ao longo do curso, suas habilidades de ensino e paixão pelo assunto foram evidentes. Seus insights foram fundamentais para a condução adequada da elaboração e análise de modelos, assim como as técnicas apropriadas para interpretação dos resultados.
+\newpage	
+
+\thispagestyle{empty}
+	% resumo em português
+	
+\begin{resumoumacoluna}
+		O objetivo do trabalho é desenvolver um modelo estatístico para prever a ocorrência de doenças cardiovasculares com base em dados reais de pacientes e elaborar uma análise exploratória dos dados (EAD), com o intuito de identificar possíveis relações entre as covariáveis do dataset que podem vir a influenciar um indivíduo a contrair doenças cardiovasculares. O conjunto utilizado está disponível no [Kaggle](https://www.kaggle.com/sulianova/cardiovascular-disease-dataset), que contém 70.000 registros de pacientes, com 12 variáveis de entrada e 1 variável de saída, que indica se o paciente possui ou não doença cardiovascular. 
+		
+		\vspace{\onelineskip}
+		
+		\noindent
+		\textbf{Palavras-chave}: modelagem. estatística. doença cardiovascular. saúde. análise de dados. regressão linear. bayes.
+\end{resumoumacoluna}
+	
+\newpage	
+\thispagestyle{empty}
+	% resumo em inglês
+	\renewcommand{\resumoname}{Abstract}
+	\begin{resumoumacoluna}
+		\begin{otherlanguage*}{english}
+			The objective of this work is to develop a statistical model to predict the occurrence of cardiovascular diseases based on real patient data and to elaborate an exploratory data analysis (EDA), in order to identify possible relationships between the covariates of the dataset that may influence an individual to contract cardiovascular diseases. The dataset used is available on [Kaggle](https://www.kaggle.com/sulianova/cardiovascular-disease-dataset), which contains 70,000 patient records, with 12 input variables and 1 output variable, which indicates whether the patient has cardiovascular disease or not.
+			
+			\vspace{\onelineskip}
+			
+			\noindent
+			\textbf{Keywords}: modeling. statistics. cardiovascular disease. healthcare. data analysis. linear regression. bayes. machine learning. R.
+		\end{otherlanguage*}  
+	\end{resumoumacoluna}
+
+	\newpage
+
+	\thispagestyle{empty}
+	\tableofcontents*
+	\newpage
+
+	\section{Introdução}
+	\setcounter{page}{1}
+	\pagestyle{plain}
+	Doenças cardiovasculares são a principal causa de morte no mundo. Segundo a Organização Mundial da Saúde (OMS), 17,9 milhões de pessoas morreram em 2019 devido a doenças cardiovasculares, sendo que 85\% dessas mortes são causadas por infarto do miocárdio e acidente vascular cerebral (AVC). A OMS e a Organização Pan-Americana de saúde também estimam que 80\% das mortes prematuras por doenças cardiovasculares podem ser evitadas com mudanças no estilo de vida, como: evitar o consumo de tabaco, alimentação saudável e prática de atividades físicas. 
+	
+	A análise de dados clínicos é um componente fundamental da epidemiologia e medicina baseada em evidências. Ela permite que pesquisadores e médicos compreendam a complexa dinâmica das doenças, assim como os fatores que influenciam a sua ocorrência e a eficácia das intervenções. No caso das doenças cardiovasculares, a situação é especialmente relevante devido à sua prevalência e mortalidade associada, fazendo da análise desses dados uma atividade de grande importância para a saúde pública.
+	
+	Diante dessa situação, iremos trabalhar com um dataset composto por 70.000 registros coletados em exames médicos na plataforma \textit{Kaggle} \cite{datasetcardiovascular}, uma plataforma que disponibiliza publicação e coleta de conjunto de dados aos seus usuários. Nele, há 12 características sobre cada paciente e a variável "alvo" que representa a presença ou não de uma doença cardiovascular. As características foram separadas em 3 inputs:
+	
+	\noindent $\cdot$ Objetiva: Informação factual.\\
+	$\cdot$ Exame: Resultados de exames médicos.\\
+	$\cdot$ Subjetiva: Informação dada pelo paciente.
+	
+
+	\begin{table}[H]
+		\caption{Variáveis do Dataset}
+		\centering
+		\begin{tabular}{|c|c|c|p{8cm}|}
+			\hline
+			Variáveis & Input & Tipo & \multicolumn{1}{c|}{Descrição}\\
+			\hline
+			\hline
+			id &  - & Num. Contínuo & ID do registro\\
+			\hline
+			age & objetiva & Num. Contínuo & Idade (em dias)\\
+			\hline
+			height & objetiva & Num. Contínuo & Altura (em metros)\\
+			\hline
+			weight & objetiva & Num. Contínuo & Peso (em kg.)\\
+			\hline
+			gender & objetiva & Num. Contínuo & Sexo, valor 1 para mulher e 2 para homem\\
+			\hline
+			ap\_hi & objetiva & Num. Contínuo & Pressão Sistólica\\
+			\hline
+			ap\_ho & exame & Num. Contínuo & Pressão Diastólica\\
+			\hline
+			cholesterol & exame & Categórica Ord. & Nível de Colesterol, Valor 1 para normal,
+			2 para acima do normal e 3 para bem acima do normal\\
+			\hline
+			gluc & exame & Categórica Bin. & Nível da Glicose, Valor 1 para normal, 2 para acima do normal e 3 para bem acima do normal\\
+			\hline
+			smoke & subjetiva & Categórica Bin. & Se é fumante, Valor 0 para não fumante e 1 para fumante\\
+			\hline
+			alco & subjetiva & Categórica Bin. & Se ingere álcool, Valor 0 se não ingere e 1 se ingere\\
+			\hline
+			active & subjetiva & Categórica Bin. & Se pratica atividade física, Valor 0 se pratica e 1 se não pratica\\ 
+			\hline 
+			cardio & alvo & Categórica Bin. & Informa a presença ou não de doença cardiovascular. Valor 0 se não tem e 1 se tem\\
+			\hline
+		\end{tabular}
+		\label{table:variaveis}
+	\end{table}
+
+	\newpage
+	Variáveis como idade, altura, peso e gênero são características demográficas e biológicas fundamentais que podem influenciar o risco de doenças cardiovasculares. Já variáveis de saúde como pressão sistólica (ap\_hi), pressão diastólica (ap\_lo), colesterol e glicose são medidas clínicas diretas do estado de saúde cardiovascular de um indivíduo. E por fim, o consumo de tabaco (smoke), consumo de álcool (alco) e a atividade física (active) são fatores comportamentais que terão suas relações com a saúde cardiovascular exploradas mais a fundo. 
+	
+	O principal objetivo é desenvolver um modelo de regressão logística que possa ajudar a detectar se uma pessoa corre o risco de adquirir uma doença cardiovascular. Informar a probabilidade de um paciente ter ou desenvolver uma doença cardiovascular desempenha um papel fundamental na tomada de decisões médicas. Além disso, eles também podem ajudar a identificar indivíduos em risco que ainda não foram diagnosticados, o que poderia resultar em uma intervenção mais precoce e, portanto, melhores resultados para os pacientes com redução do risco. 
+	
+	Segundo a OMS, vidas poderiam ser salvas por meio de melhorias no acesso à saúde, sobretudo no que diz respeito ao controle da pressão alta, do colesterol alto e de outras condições que aumentam o risco de doenças cardiovasculares. Então, a análise destes dados pode aumentar nossa compreensão dos fatores que contribuem para essas condições, o que poderia levar a melhores estratégias de prevenção e controle.
+	
+	O artigo será dividido partes. No Capítulo 2 será apresentada a metodologia utilizada para a construção de modelos. No Capítulo 3 serão analisados os dados para construção da análise exploratória (AED), ajustes do modelo, e também serão apresentados as estimativas e predições obtidas. E por fim, no capítulo 4 será elaborada a conclusão com considerações finais sobre os classificadores e uma discussão das limitações metodológicas e limitações do dataset, assim como o caminho para possíveis trabalhos futuros.
+	\section{Metodologia}
+	
+	
+	\newpage
+	\thispagestyle{plain}
+	\section{Resultados}
+	
+	\subsection{Análise Exploratória}
+	
+	
+	
+	\subsection{Métricas de Performance}
+	Esta sub-seção descreve a avaliação de desempenho para o conjunto de dados 1 e o conjunto de dados 2 com as medidas de Verdadeiro Positivo (TP), Verdadeiro Negativo (TN), Falso Positivo (FP), Falso Negativo (FN), F-score, Jaccard, Classificação perdida, Desempenho índice, função de volume falso-positivo, função de volume falso-negativo e taxa de aceitação genuína.
+	
+	% ---
+	% Finaliza a parte no bookmark do PDF, para que se inicie o bookmark na raiz
+	% ---
+	
+	% ---
+	% Conclusão
+	% ---
+	\section{Discussão}
+	\lipsum[2]
+	
+	% ----------------------------------------------------------
+	% ELEMENTOS PÓS-TEXTUAIS
+	% ----------------------------------------------------------
+	%\postextual
+	
+	% ----------------------------------------------------------
+	% Referências bibliográficas
+	% ----------------------------------------------------------
+	%\bibliography{abntex2-modelo-references}
+	
+	\newpage
+	\bibliographystyle{plain}
+	\bibliography{bibliography.bib}
+
+	
+
+
+
+\end{document}

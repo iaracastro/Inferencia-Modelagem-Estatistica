@@ -1,0 +1,202 @@
+\documentclass[article,11pt,a4paper,brazil]{abntex2}
+
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{indentfirst}
+\usepackage{nomencl}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{microtype}
+\renewcommand*{\insertchapterspace}{%
+	\addtocontents{lof}{\protect\addvspace{10pt}}%
+	\addtocontents{lot}{\protect\addvspace{10pt}}}
+
+% ---
+% Pacotes fundamentais 
+% ---
+\usepackage{lmodern}			% Usa a fonte Latin Modern
+\usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
+\usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
+\usepackage{nomencl} 			% Lista de simbolos
+\usepackage{color}				% Controle das cores
+\usepackage{graphicx}			% Inclusão de gráficos
+\usepackage{microtype} 			% para melhorias de justificação
+
+% Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
+% ---
+\usepackage{lipsum}				% para geração de dummy text
+% ---
+
+
+
+% --- Informações de dados para CAPA e FOLHA DE ROSTO ---
+\titulo{Modelagem Estatística de [Tema?]}
+\tituloestrangeiro{Statistic Modeling of [?]}
+
+\autor{
+	Seu nome aqui }
+
+\data{\today}
+% ---
+
+% ---
+% Configurações de aparência do PDF final
+
+% alterando o aspecto da cor azul
+\definecolor{blue}{RGB}{41,5,195}
+
+% informações do PDF
+\makeatletter
+
+\hypersetup{
+	%pagebackref=true,
+	pdftitle={\@title}, 
+	pdfauthor={\@author},
+	pdfsubject={Modelo de artigo científico com abnTeX2},
+	pdfcreator={LaTeX with abnTeX2},
+	pdfkeywords={abnt}{latex}{abntex}{abntex2}{atigo científico}, 
+	colorlinks=true,       		% false: boxed links; true: colored links
+	linkcolor=blue,          	% color of internal links
+	citecolor=blue,        		% color of links to bibliography
+	filecolor=magenta,      		% color of file links
+	urlcolor=blue,
+	bookmarksdepth=4
+}
+\makeatother
+% --- 
+
+% ---
+% compila o indice
+% ---
+\makeindex
+% ---
+
+% ---
+% Altera as margens padrões
+% ---
+\setlrmarginsandblock{3cm}{3cm}{*}
+\setulmarginsandblock{3cm}{3cm}{*}
+\checkandfixthelayout
+% ---
+
+
+% --- 
+% Espaçamentos entre linhas e parágrafos 
+% --- 
+
+% O tamanho do parágrafo é dado por:
+\setlength{\parindent}{1.3cm}
+
+% Controle do espaçamento entre um parágrafo e outro:
+\setlength{\parskip}{0.2cm}  % tente também \onelineskip
+
+% Espaçamento simples
+\SingleSpacing
+
+
+% ----
+% Início do documento
+% ----
+\begin{document}
+	
+	% Seleciona o idioma do documento (conforme pacotes do babel)
+	%\selectlanguage{english}
+	\selectlanguage{brazil}
+	
+	% Retira espaço extra obsoleto entre as frases.
+	\frenchspacing 
+	
+	% ----------------------------------------------------------
+	% ELEMENTOS PRÉ-TEXTUAIS
+	% ----------------------------------------------------------
+	
+	%---
+	%
+	% Se desejar escrever o artigo em duas colunas, descomente a linha abaixo
+	% e a linha com o texto ``FIM DE ARTIGO EM DUAS COLUNAS''.
+	% \twocolumn[    		% INICIO DE ARTIGO EM DUAS COLUNAS
+	%
+	%---
+	
+	% página de titulo principal (obrigatório)
+	\maketitle
+	\thispagestyle{empty}
+	\begin{citacao}
+		Estudo de caso da disciplina de Modelagem Estatística submetido como trabalho da A2 no 5° período de [curso?].\\
+		Professor: Luiz Max
+	\end{citacao}
+	% titulo em outro idioma (opcional)
+	
+	\newpage
+	\thispagestyle{empty}
+	% resumo em português
+	\begin{resumoumacoluna}
+		O tal do abstract. \lipsum[2]
+		
+		\vspace{\onelineskip}
+		
+		\noindent
+		\textbf{Palavras-chave}: 
+	\end{resumoumacoluna}
+	
+	\newpage	
+	\thispagestyle{empty}
+	% resumo em inglês
+	\renewcommand{\resumoname}{Abstract}
+	\begin{resumoumacoluna}
+		\begin{otherlanguage*}{english}
+			Em inglês. \lipsum[2]
+			
+			\vspace{\onelineskip}
+			
+			\noindent
+			\textbf{Keywords}: 
+		\end{otherlanguage*}  
+	\end{resumoumacoluna}
+	
+	\newpage
+	\thispagestyle{empty}
+	\tableofcontents*
+	\newpage
+	
+	\section{Introdução}
+	\setcounter{page}{1}
+	\pagestyle{plain}
+	Intro aqui!!
+	
+	
+	\section{Metodologia}
+	
+	\newpage
+	\thispagestyle{plain}
+	\section{Resultados}
+	
+	\lipsum[1]
+	
+	% ---
+	% Finaliza a parte no bookmark do PDF, para que se inicie o bookmark na raiz
+	% ---
+	
+	% ---
+	% Conclusão
+	% ---
+	\section{Discussão}
+	
+	
+	
+	\lipsum[3]
+	
+	% ----------------------------------------------------------
+	% ELEMENTOS PÓS-TEXTUAIS
+	% ----------------------------------------------------------
+	\postextual
+	
+	% ----------------------------------------------------------
+	% Referências bibliográficas
+	% ----------------------------------------------------------
+	\bibliography{abntex2-modelo-references}
+	
+	
+\end{document}
